@@ -1,0 +1,863 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Landing Sumo - Theme 20
+ * URL: http://LandingSumo.com
+ * Version: 1.0
+ * Exclusive Freebie for BlackTie.co
+ */
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900');
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: 'Muli','Lato', sans-serif;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Muli','Lato', sans-serif;
+}
+
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px; 
+	line-height: 26px;
+	letter-spacing: 1px;
+	color: #000; 
+	margin-top: 10px; 
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 20px; padding-bottom: 10px; padding-left: 40px;padding-right: 40px;}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+	color: #1abc9c;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#fff;
+}
+
+.nopadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+
+/* FORM CONFIGURATION */
+
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 25px;
+	line-height: 20px;
+	padding: 15px 30px 16px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	opacity: 0.9;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 65%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+	.subscribe-input {
+		width: 100%;
+	}
+}
+
+.subscribe-submit {
+	right: 0;
+}
+
+.btn-download {
+	background: #FDE3A7;
+}
+
+/*Buttons Configuration */
+.btn-conf {
+	border-radius: 50px;
+	margin-right: 15px;
+	letter-spacing: 1px;
+}
+
+.btn-conf-2 {
+	border-radius: 50px;
+	margin-right: 15px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 12px 28px 11px 28px;
+	margin-top: 20px;
+	}	
+
+.btn-green {
+	background: #03C9A9;
+	color: white
+}
+
+/* HEADER SECTION */
+#head {
+	background: url(../img/background.jpg) no-repeat center top;
+	padding-top: 180px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	z-index: 10;
+	width: 100%;
+	color: white;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#head .head-right{
+	float: right !important; 
+}
+#head .logo {
+	top: 30px;
+	left: 45px;
+	font-size: 18px;
+	font-weight: 900;
+	position:absolute; 
+}
+
+
+
+#head .social i {
+	margin-left: 20px;
+}
+
+
+#head h1 {
+	font-weight: 700;
+	color: white;
+	font-size: 40px;
+}
+
+/* Store Links */
+.store img {
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+/* SEP */
+#sep {
+	background: url(../img/sep.jpg) no-repeat center top;
+	padding-top: 90px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	color: white;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sep h4 {
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+/* Pricing Tables */
+.price-table {
+	border: 2px solid #5a5a5a;
+	border-radius: 25px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	margin: 5px; 
+}
+
+.price-table .p-head {
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 80px;
+	border-bottom: 2px solid #ccc;
+}
+
+.price-table .p-body .features li {
+	color: #333333;
+	border-bottom: 2px solid #ccc;
+	padding: 24px 0px;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.p-body .price .detail {
+	font-weight: 700;
+	font-size: 45px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.p-body .price .sub {
+	font-size: 18px;
+	color: #ccc;
+	position: relative;
+	bottom: 10px;
+	font-weight: 700;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* SPONSORS */
+#g {
+	background: #f2f2f2;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.sponsor img {
+	max-width: 140px;
+	max-height: 60px;
+	vertical-align: middle;
+}
+
+.sponsor .col-sm-2 {
+	height: 80px;
+	line-height: 80px;
+}
+
+/* GREEN SECTION - TESTIMONIAL */
+
+.green {
+	padding-top: 90px;
+	padding-bottom: 60px;
+	min-height: 300px;
+	background: #03C9A9;
+	color: white;
+}
+
+.green tgr {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* FOOTER */
+.social-media {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: rgba(0, 133, 202, 0.45);
+	color: white;
+}
+
+.social-media h5 {
+	margin-top: 30px;
+	letter-spacing: 1px;
+}
+
+.social-media i {
+	font-size: 45px;
+	margin: 15px;
+}
+
+.social-media a {
+	color: #b9b9b9;
+}
+
+.social-media a:hover {
+	color: #03C9A9;
+}
+
+.kaatas{
+	position: fixed;
+    top: 0px;
+    left: 74px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #000;	
+}
+
+@media (min-width: 768px) {
+	.navbar-default {
+	  background-color: transparent;
+	  border-color: transparent;
+	}
+
+	.navbar-fixed-top {
+	  top: 32px;
+	  border-width: 0 0 1px;
+	}
+
+	#head .social {
+		
+		font-size: 14px;
+		text-align: right;
+		background-color: transparent;
+		height: 32px;
+		padding: 2px 100px;
+	}
+
+	.kaatas{
+	    left: 242px;
+	}
+	
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #0082c6;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-left-color: #;
+	border-width: 36px;
+	margin-top: -36px;
+}
+}
+#nav.affix {
+  position: fixed;
+  width: 100%;
+  background-color: #010e3b;
+}
+#nav.affix-top {
+  background-color: rgba(1, 14, 59, 0.63);
+}
+.navbar-fixed-top{
+	top: 0;
+	font-family: 'Arima Madurai';
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 16px;
+}
+#head .social {
+	background-color: transparent;
+	width: 100%;
+	color: white;
+	padding: 6px 15px;
+}
+#we-serve{
+	padding: 10px 0;
+}
+
+#img-laptop{
+	position: absolute;
+	z-index: 10;
+}
+.carousel{
+	margin: 12px 21px;
+    left: 16px;
+    position: relative;
+    top: 9px;
+}
+#why-we{
+	margin-bottom: 10px;
+}
+
+#team{
+	padding-top: 70px;
+    text-align: center;
+    padding-bottom: 70px;
+    background: rgb(3, 201, 169);
+}
+
+.losange, .losange div {
+	margin: 0 auto;
+	display: inline-block;
+	transform-origin: 50% 50%;
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+}
+.losange {
+	transform: rotate(45deg) translateY(10px);
+}
+.losange .los1 {
+	width: 355px;
+	height: 355px;
+	transform: rotate(-45deg) translateY(-74px);
+	z-index: 9;
+}
+.losange .los1 img {
+	width: 100%;
+	height: auto;
+}
+
+.losange .los1:hover{
+	z-index: 10;
+}
+.laptop{
+	margin: 0;
+	left: 0;
+}
+.ket-laptop{
+	position: initial;
+	color: black;
+	text-shadow: 0 0 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {
+  margin: 0px;
+  background: url('../img/pattern.png');
+}
+nav {
+  text-align: center;
+  font-family: Raleway;
+}
+
+.link-1 {
+  transition: 0.3s ease;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+.link-1:hover {
+  border-bottom: 4px solid #55ddff;
+}
+
+.link-2 {
+  transition: 0.6s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-right: 2px dotted transparent;
+  margin: 0 10px;
+}
+.link-2:hover {
+  border-right: 2px dotted #ffffff;
+  padding-bottom: 24px;
+}
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+.right{
+	float: right;
+	color: black;
+}
+.affix{
+	background-color: rgba(0, 142, 208, 0.75);
+}
+.lnav{
+	font-size: 14px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+  color: #0092d5;
+}
+#keterangan{
+	font-size: 18px;
+}
+.typewrite{
+	color: black;
+}
+.space{
+	margin-top: 10px;
+}
+.hr-contact{
+	border-top: 3px dashed rgb(146, 206, 236);
+	
+}
+.control-label{
+	font-size: 14px;
+}
+
+.form-control{
+	height: 58px;
+	font-size: 16px;
+}
+#contact{
+	margin-top: 40px;
+	padding : 30px;
+	background-color: rgb(62, 96, 111);
+}
+#label-contact{
+	color: #fff;
+}
+#footer{
+    padding: 30px 0;
+    background-color: #173543;
+    color: white;
+}
+#alur-kerja{
+    padding: 30px 0;
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: black;
+    font-size: 80px;
+    font-weight: 700;
+    width: 30%;
+}
+.circle::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+.btn-blue{
+	background-color: #40aadc;
+	color: black;
+
+}
+.arrow_box, .box{
+	position: relative;
+	background: #0082c6;
+	border: 4px solid #;
+	padding: 35px 0px;
+    text-align: center;
+    border-radius: 29%;
+    color: white;
+}
+
+.arrow_box:hover, .box:hover{
+	background-color: black;
+	color: white;
+}
+.alur{
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: lowercase;
+}
+#komunikasi{
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: lowercase;
+}
+#review::before{
+	display: none
+}
+#review:hover{
+	color:green;
+}
+#masalah:hover{
+	color:orange;
+}
+#solusi:hover{
+	color:red;
+}
+#komunikasi:hover{
+	color:blue;
+}
+.rwhy{
+	padding: 30px 33px;
+    background: #f4f4f4;
+    margin: 10px 9px;
+}
+.iwhy{
+	margin-top: 10%;
+}
+.alur::before{
+    position: absolute;
+    width: 150px;
+    content: '';
+    border-top: 3px dashed blue;
+    float: right;
+    margin-left: 100px;
+    margin-top: 37px;
+}
+.head-right ul li{
+	float: right;
+}
+
+
+.why-we ol {
+  color: #ccc;
+  list-style-type: none;
+}
+
+.why-we  ol li {
+  position: relative;
+  font: bold italic 60px/1.5 Helvetica, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+
+.why-we  li p {
+  font-family: Helvetica, sans-serif;
+  padding-left: 60px;
+  color: black;
+}
+.why-we  li h4 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding-left: 60px;
+  color: #03A9F4;
+}
+.why-we  span {
+  position: absolute;
+}
+
+.why-we ol li img{
+	padding-left: 60px;
+}
+/*
+ * Developer: Alireza Eskandarpour Shoferi
+ * Designer: Wouter de Bres (dribbble.com/wdeb)
+ *
+ * Distributed under the terms of the MIT license
+ * http://opensource.org/licenses/MIT
+ */
+.wrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #9f9f9f;
+  font-size: 15px;
+  display: inline-flex;
+  padding-top: 30px;
+}
+.package {
+  box-sizing: border-box;
+  width: 300px;
+  min-height: 380px;
+  border: 3px solid #e8e8e8;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 24px;
+  text-align: center;
+  float: left;
+  -webkit-transition: margin-top 0.5s linear;
+  transition: margin-top 0.5s linear;
+  position: relative;
+  margin-right: 11px;
+}
+.package:hover {
+  margin-top: -30px;
+  -webkit-transition: margin-top 0.3s linear;
+  transition: margin-top 0.3s linear;
+}
+.name {
+  color: #565656;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: -5px;
+}
+.price {
+  margin-top: 7px;
+  font-weight: bold;
+}
+.price::after {
+  content: " / month per user";
+  font-weight: normal;
+}
+.package hr {
+  background-color: #dedede;
+  border: none;
+  height: 1px;
+}
+.trial {
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 2px 21px 2px 21px;
+  color: #33c4b6;
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  bottom: -20px;
+}
+.package ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 29px;
+}
+.package ul li {
+  margin-bottom: 15px;
+}
+.checkIcon {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+.package ul li::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 1.3rem;
+  color: #33c4b6;
+  margin-right: 3px;
+}
+.brilliant {
+  border-color: #33c4b6;
+}
+/* Triangle */
+.brilliant::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: #3bc6b8 transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.brilliant::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: white;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  text-shadow: 0 0 2px #37c5b6;
+  font-size: 1.4rem;
+}
+.text-head{
+ 	transform: rotate(-27deg);
+    top: -62px;
+    right: 0;
+}
+.right-float{
+	float: right;
+	text-align: right;
+}
+.head-right li a{
+	color: black;
+}
+.link-1>li a{
+	color: white;
+}
+.ket-laptop h3, .ket-laptop h4{
+	font-family: 'Lato';
+	line-height: inherit;
+	margin-top: -13px;
+}
+.content-why{
+	height: 100%;
+	width: 100%;
+}
+/*#whyone{
+	background: green;
+}
+
+#whytwo{
+	background: yellow;
+}
+#whythree{
+	background: red;
+}
+#whyfour{
+	background: blue;
+}*/

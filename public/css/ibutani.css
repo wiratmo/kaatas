@@ -1,0 +1,66 @@
+.seemore{
+	float: right;
+}
+.promo{
+	margin-bottom: 10px;
+}
+.banner{
+	margin-bottom: 15px;
+}
+.new-Product{
+	padding: 15px 0;
+}
+.kaki{
+	background: #adf421;
+	width: 100%;
+	padding: 15px 0;
+	position: relative;
+  	text-align: center;
+  	width: 100%;
+}
+.ibutani{
+	background: #24ef25;
+	width: 100%;
+	padding: 15px 0;
+	position: relative;
+  	text-align: center;
+  	width: 100%;
+}
+.nameProduct{
+	text-align: center;
+	font-size: 14px;
+}
+.priceProduct .stock{
+	color: rgb(179, 20, 20);
+}
+.header-content{
+	position: relative;
+  	text-align: center;
+  	width: 100%;
+	height: 400px;
+	padding:10px 0;
+	background-image: url("/img/background/header-sawah.jpg"); 
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color:#fff;
+	text-shadow: 2px 2px #000;
+	font-size: 100%;
+}
+.sela{
+	margin-top: 40px;
+}
+.btsats{
+	margin-top: 70px;
+}
+.photoprofile{
+	width: 200px;
+	height: 200px;
+}
+.model-padding{
+	padding: 10px 10px;
+}
+.mini{
+	width: 70px;
+	height: 70px;
+}
